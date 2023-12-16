@@ -77,6 +77,12 @@
                     <p id="farentocel" class="mt-1.5 p-2 "></p>
     
                 </div>
+                <div class="col-4">
+                    <h2 > BCM to BCF </h2>
+                    <input type="number" class="p-2 rounded"  placeholder="Enter Celcious Value" oninput="bcmTobcf(this.value)">
+                    <p id="bcmtobcf" class="mt-1.5 p-2 "></p>
+    
+                </div>
             </div>
             <footer class="container bg-info p-4 mt-3 text-center">
               <p>Developed by:&hearts; Abdul Hannan</p>   
@@ -116,10 +122,14 @@
         var celcious=((farenhite-32)/9)*5;
      document.querySelector("#farentocel").innerHTML= celcious.toFixed(3)+" "+"celcious";
     }
+    function bcmTobcf(bcm) {
+        var bcf=(bcm*35.3147);
+     document.querySelector("#bcmtobcf").innerHTML= bcf.toFixed(3)+" "+"bcf";
+    }
 
 
     // var cm=document.querySelector("#cm");
-    console.log(mmscf);
+    // console.log(mmscf);
 </script>
     
 </body>
